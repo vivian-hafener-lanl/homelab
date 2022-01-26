@@ -17,7 +17,8 @@ Current status: **BETA**
 This repo hosts all of the files and documentation from the creation and operation of my homelab. A homelab is a system or collection of systems used for learning about hardware, networking, and software, with the secondary goal of hosting services. This is the case for my homelab, and as a result of this project I hope to deepen my knowledge of DevOps techniques and tools, specifically GitOps, Kubernates, Nginx, Proxmox, and Pfsense.
 
 ## Overview
-#### Elips (name pending) 
+My homelab consists of a two-system proxmox cluster. My nodes are Elips and Minerva. Elips is less powerful, but has more space for storage expandability. For this reason Elips primarily hosts my nextcloud instance. Minerva is my more powerful node, and is used to host the majority of my services via Kubernates. Minerva also contains my private network, which I use for higher security storage and operations. 
+#### Elips
 ![Online](https://img.shields.io/uptimerobot/status/m790187873-2619a6e8222a7cd184383f39)
 ![Uptime](https://img.shields.io/uptimerobot/ratio/7/m790187873-2619a6e8222a7cd184383f39?label=Uptime%20-%20week)
 ![Uptime](https://img.shields.io/uptimerobot/ratio/m790187873-2619a6e8222a7cd184383f39?label=Uptime%20-%20Month)
