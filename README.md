@@ -5,19 +5,13 @@
 ![last commit](https://img.shields.io/github/last-commit/viv-codes/homelab)
 ![license](https://img.shields.io/github/license/viv-codes/homelab)
 
-###### Backend
 
-![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
-![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)
-
-Current status: **BETA**
-
-## Introduction
+# Introduction
+---
 This repo hosts all of the files and documentation from the creation and operation of my homelab. A homelab is a system or collection of systems used for learning about hardware, networking, and software, with the secondary goal of hosting services. This is the case for my homelab, and as a result of this project I hope to deepen my knowledge of DevOps techniques and tools, specifically GitOps, Kubernates, Nginx, Proxmox, and Pfsense.
 
 ## Overview
-My homelab consists of a two-system proxmox cluster. My nodes are Elips and Minerva. Elips is less powerful, but has more space for storage expandability. For this reason Elips primarily hosts my nextcloud instance. Minerva is my more powerful node, and is used to host the majority of my services via Kubernates. Minerva also contains my private network, which I use for higher security storage and operations. 
+My homelab consists of a two-system proxmox cluster. My nodes are Elips and Minerva. Elips is less powerful, but has more space for storage expansion in the future. For this reason Elips primarily hosts my nextcloud instance. Minerva is my more powerful node, and is used to host the majority of my services via Kubernates. Minerva also contains my private network, which I use for higher security storage and operations. 
 #### Elips
 ![Online](https://img.shields.io/uptimerobot/status/m790187873-2619a6e8222a7cd184383f39)
 ![Uptime](https://img.shields.io/uptimerobot/ratio/7/m790187873-2619a6e8222a7cd184383f39?label=Uptime%20-%20week)
@@ -39,6 +33,13 @@ My homelab consists of a two-system proxmox cluster. My nodes are Elips and Mine
 * Networking - 4 x 1Gbe
 * Storage
   - 10TiB - RAIDZ1
+ 
+# Backend
+---
+
+![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)
 
 ## Proxmox
 1. Install Proxmox from [the ISO](https://www.proxmox.com/en/downloads/category/iso-images-pve) by following the [official documentation ](https://pve.proxmox.com/wiki/Installation)
@@ -68,10 +69,13 @@ My homelab consists of a two-system proxmox cluster. My nodes are Elips and Mine
 
 ## Flux
 
-## Services
+# Services
+---
 ![WordPress](https://img.shields.io/badge/WordPress-%23117AC9.svg?style=for-the-badge&logo=WordPress&logoColor=white)
 ![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white)
 ![Next Cloud](https://img.shields.io/badge/Next%20Cloud-0B94DE?style=for-the-badge&logo=nextcloud&logoColor=white)
+## Services
+
 
 ## Documentation referenced:
 * Proxmox Installation - https://pve.proxmox.com/wiki/Installation
