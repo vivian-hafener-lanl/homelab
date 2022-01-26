@@ -26,8 +26,15 @@ Current status: **BETA**
 This repo hosts all of the files and documentation from the creation and operation of my homelab. A homelab is a system or collection of systems used for learning about hardware, networking, and software, with the secondary goal of hosting services. This is the case for my homelab, and as a result of this project I hope to deepen my knowledge of DevOps techniques and tools, specifically GitOps, Kubernates, Nginx, Proxmox, and Pfsense.
 
 ## Overview
-
-My homelab consists of 
+#### Hardware
+###### Elips (name pending) 
+* Thinkserver TD340
+* RAM - 64Gb DDR3 Registered ECC Memory
+* CPU - 1 x Intel Xeon E5-2420 v2, 12 cores @ 2.20GHz
+* Storage 14Tb
+  - 2x3TiB ZFS Mirror
+  - 2x4TiB ZFS Mirror
+###### Minerva
 
 ## Proxmox
 
