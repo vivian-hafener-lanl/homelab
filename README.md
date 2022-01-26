@@ -28,8 +28,8 @@ My homelab consists of a two-system proxmox cluster. My nodes are Elips and Mine
 ![Online](https://img.shields.io/uptimerobot/status/m790466602-0858f891fbe572951f707f6d)
 ![Uptime](https://img.shields.io/uptimerobot/ratio/7/m790466602-0858f891fbe572951f707f6d?label=Uptime%20-%20Week)
 ![Uptime](https://img.shields.io/uptimerobot/ratio/m790466602-0858f891fbe572951f707f6d?label=Uptime%20-%20Month)
-* RAM
-* CPU
+* RAM - 256Gb DDR3 Registered ECC Memory
+* CPU - 4 x 
 * Networking - 4 x 1Gbe
 * Storage
   - 10TiB - RAIDZ1
