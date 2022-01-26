@@ -19,7 +19,8 @@ This repo hosts all of the files and documentation from the creation and operati
 ## Overview
 #### Elips (name pending) 
 ![Online](https://img.shields.io/uptimerobot/status/m790187873-2619a6e8222a7cd184383f39)
-![Uptime](https://img.shields.io/uptimerobot/ratio/7/m790187873-2619a6e8222a7cd184383f39)
+![Uptime](https://img.shields.io/uptimerobot/ratio/7/m790187873-2619a6e8222a7cd184383f39?label=Uptime%20-%20week)
+![Uptime](https://img.shields.io/uptimerobot/ratio/m790187873-2619a6e8222a7cd184383f39?label=Uptime%20-%20Month)
 * Thinkserver TD340
 * RAM - 64Gb DDR3 Registered ECC Memory
 * CPU - 1 x Intel Xeon E5-2420 v2, 12 cores @ 2.20GHz
@@ -29,6 +30,9 @@ This repo hosts all of the files and documentation from the creation and operati
   - 3 TiB - ZFS Mirror
   - 4 TiB - ZFS Mirror
 #### Minerva
+![Online](https://img.shields.io/uptimerobot/status/m790466602-0858f891fbe572951f707f6d)
+![Uptime - Week](https://img.shields.io/uptimerobot/ratio/7/m790466602-0858f891fbe572951f707f6d?label=Uptime%20-%20Week)
+![Uptime](https://img.shields.io/uptimerobot/ratio/m790466602-0858f891fbe572951f707f6d?label=Uptime%20-%20Month)
 * RAM
 * CPU
 * Networking - 4 x 1Gbe
