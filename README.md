@@ -25,9 +25,13 @@ This repo hosts all of the files and documentation from the creation and operati
 * CPU - 1 x Intel Xeon E5-2420 v2, 12 cores @ 2.20GHz
 * Storage
   - 128GiB SSD (Boot drive)
-  - 2x3TiB ZFS Mirror
-  - 2x4TiB ZFS Mirror
+  - 3 TiB - ZFS Mirror
+  - 4 TiB - ZFS Mirror
 #### Minerva
+* RAM
+* CPU
+* Storage
+  - 10TiB - RAIDZ1
 
 ## Proxmox
 
