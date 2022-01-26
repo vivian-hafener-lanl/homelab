@@ -32,7 +32,7 @@ My homelab consists of a two-system proxmox cluster. My nodes are Elips and Mine
   - 4 TiB - ZFS Mirror
 #### Minerva
 ![Online](https://img.shields.io/uptimerobot/status/m790466602-0858f891fbe572951f707f6d)
-![Uptime - Week](https://img.shields.io/uptimerobot/ratio/7/m790466602-0858f891fbe572951f707f6d?label=Uptime%20-%20Week)
+![Uptime](https://img.shields.io/uptimerobot/ratio/7/m790466602-0858f891fbe572951f707f6d?label=Uptime%20-%20Week)
 ![Uptime](https://img.shields.io/uptimerobot/ratio/m790466602-0858f891fbe572951f707f6d?label=Uptime%20-%20Month)
 * RAM
 * CPU
