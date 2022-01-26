@@ -1,7 +1,7 @@
 # Vivi's Homelab
 
 <!-- ANCHOR: introduction -->
-###### Status
+###### Status: Work in Progress
 ![last commit](https://img.shields.io/github/last-commit/viv-codes/homelab)
 ![license](https://img.shields.io/github/license/viv-codes/homelab)
 
