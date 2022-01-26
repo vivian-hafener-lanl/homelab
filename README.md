@@ -16,7 +16,7 @@ My homelab consists of a two-system proxmox cluster. My nodes are Elips and Mine
 ![Online](https://img.shields.io/uptimerobot/status/m790187873-2619a6e8222a7cd184383f39)
 ![Uptime](https://img.shields.io/uptimerobot/ratio/7/m790187873-2619a6e8222a7cd184383f39?label=Uptime%20-%20week)
 ![Uptime](https://img.shields.io/uptimerobot/ratio/m790187873-2619a6e8222a7cd184383f39?label=Uptime%20-%20Month)
-* Thinkserver TD340
+* Lenovo Thinkserver TD340
 * RAM - 64Gb DDR3 Registered ECC Memory
 * CPU - 1 x Intel Xeon E5-2420 v2, 12 cores @ 2.20GHz
 * Networking - 6 x 1Gbe
