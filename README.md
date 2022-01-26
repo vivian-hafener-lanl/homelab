@@ -23,6 +23,7 @@ This repo hosts all of the files and documentation from the creation and operati
 * Thinkserver TD340
 * RAM - 64Gb DDR3 Registered ECC Memory
 * CPU - 1 x Intel Xeon E5-2420 v2, 12 cores @ 2.20GHz
+* Networking - 6 x 1Gbe
 * Storage
   - 128GiB SSD (Boot drive)
   - 3 TiB - ZFS Mirror
@@ -30,6 +31,7 @@ This repo hosts all of the files and documentation from the creation and operati
 #### Minerva
 * RAM
 * CPU
+* Networking - 4 x 1Gbe
 * Storage
   - 10TiB - RAIDZ1
 
