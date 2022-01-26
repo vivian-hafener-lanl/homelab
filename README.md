@@ -30,6 +30,7 @@ Current status: **BETA**
 <!-- ANCHOR_END: introduction -->
 
 ## Overview
+This repo hosts all of the files and documentation from the creation and operation of my homelab. A homelab is a system or collection of systems used for learning about hardware, networking, and software, with the secondary goal of hosting services.
 
 ## Proxmox
 
