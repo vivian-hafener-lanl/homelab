@@ -23,14 +23,11 @@
 Current status: **BETA**
 
 ## Introduction
-
-<!-- TODO -->
-
-
-<!-- ANCHOR_END: introduction -->
+This repo hosts all of the files and documentation from the creation and operation of my homelab. A homelab is a system or collection of systems used for learning about hardware, networking, and software, with the secondary goal of hosting services. This is the case for my homelab, and as a result of this project I hope to deepen my knowledge of DevOps techniques and tools, specifically GitOps, Kubernates, Nginx, Proxmox, and Pfsense.
 
 ## Overview
-This repo hosts all of the files and documentation from the creation and operation of my homelab. A homelab is a system or collection of systems used for learning about hardware, networking, and software, with the secondary goal of hosting services.
+
+My homelab consists of 
 
 ## Proxmox
 
