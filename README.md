@@ -2,6 +2,8 @@
 
 <!-- ANCHOR: introduction -->
 
+[![Uptime](https://img.shields.io/uptimerobot/status/m790187873-2619a6e8222a7cd184383f39)]
+
 ![Next Cloud](https://img.shields.io/badge/Next%20Cloud-0B94DE?style=for-the-badge&logo=nextcloud&logoColor=white)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
