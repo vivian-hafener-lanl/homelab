@@ -30,3 +30,18 @@ Current status: **BETA**
 <!-- ANCHOR_END: introduction -->
 
 ## Overview
+
+## Proxmox
+
+## Pfsense
+
+## NGINX
+
+## Kubernates
+
+## Flux
+
+## Services
+
+## Documentation referenced:
+* K8s on Proxmox - https://github.com/galenguyer/k8s 
