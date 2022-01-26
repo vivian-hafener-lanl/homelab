@@ -41,6 +41,13 @@ My homelab consists of a two-system proxmox cluster. My nodes are Elips and Mine
   - 10TiB - RAIDZ1
 
 ## Proxmox
+1. Installed Proxmox from [the ISO](https://www.proxmox.com/en/downloads/category/iso-images-pve) by following the [official documentation ](https://pve.proxmox.com/wiki/Installation)
+2. Configure Networking
+   - Once the installation is complete, your system should have a single bridge named vmnbr0 that connects to your primary network interface. This is the interface that will be used for management of proxmox. Add an A level DNS record pointing at this interface's IP address with a name like proxmox.domain.com. Additional services can also be attached to emulated NICs on this bridge, but since I don't want to use up all of the IPs on 50-net all service network traffic will be passed through pfsense.
+   - Create a new linux bridge and bind it to your secondary network interface. This will be used to pass network traffic into pfsense. Set an A level DNS record pointing at this interface's IP, with the base that you want to use for your services. Format of service URLs will be servicename.thisinterfacename.domain.com.
+   - Create a third linux bridge and do not bind it to any network interfaces. Set the ip address to 192.168.1.1/24. This is the networking that will be passed through to pfsense
+3. Configure storage
+   - Set up your storage in the way you see fit. Due to the drives available to me, I chose ZFS RAID mirrors on Elips and ZFS RAID1 striped RAID on Minerva
 
 ## Pfsense
 
@@ -56,4 +63,5 @@ My homelab consists of a two-system proxmox cluster. My nodes are Elips and Mine
 ![Next Cloud](https://img.shields.io/badge/Next%20Cloud-0B94DE?style=for-the-badge&logo=nextcloud&logoColor=white)
 
 ## Documentation referenced:
+* Proxmox Installation - https://pve.proxmox.com/wiki/Installation
 * K8s on Proxmox - https://github.com/galenguyer/k8s 
