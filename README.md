@@ -36,10 +36,12 @@ My homelab consists of a two-system proxmox cluster. My nodes are Elips and Mine
  
 # Backend
 ---
-
+![Proxmox](https://a11ybadges.com/badge?logo=proxmox)
 ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)
+![pfSense](https://a11ybadges.com/badge?logo=pfsense)
+![OpenVPN](https://a11ybadges.com/badge?logo=openvpn)
 
 ## Proxmox
 1. Install Proxmox from [the ISO](https://www.proxmox.com/en/downloads/category/iso-images-pve) by following the [official documentation ](https://pve.proxmox.com/wiki/Installation)
@@ -74,6 +76,9 @@ My homelab consists of a two-system proxmox cluster. My nodes are Elips and Mine
 ![WordPress](https://img.shields.io/badge/WordPress-%23117AC9.svg?style=for-the-badge&logo=WordPress&logoColor=white)
 ![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white)
 ![Next Cloud](https://img.shields.io/badge/Next%20Cloud-0B94DE?style=for-the-badge&logo=nextcloud&logoColor=white)
+![Overleaf](https://a11ybadges.com/badge?logo=overleaf)
+![Jellyfin](https://a11ybadges.com/badge?logo=jellyfin)
+
 ## Services
 
 
