@@ -3,7 +3,10 @@
 <!-- ANCHOR: introduction -->
 
 ![Online](https://img.shields.io/uptimerobot/status/m790187873-2619a6e8222a7cd184383f39)
-![7 day uptime] (https://img.shields.io/uptimerobot/ratio/7/m790187873-2619a6e8222a7cd184383f39)
+![Uptime](https://img.shields.io/uptimerobot/ratio/7/m790187873-2619a6e8222a7cd184383f39)
+
+
+![last commit](https://img.shields.io/github/last-commit/viv-codes/homelab)
 
 ![Next Cloud](https://img.shields.io/badge/Next%20Cloud-0B94DE?style=for-the-badge&logo=nextcloud&logoColor=white)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
