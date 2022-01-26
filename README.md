@@ -33,7 +33,10 @@ My homelab consists of a two-system proxmox cluster. My nodes are Elips and Mine
 * Networking - 4 x 1Gbe
 * Storage
   - 10TiB - RAIDZ1
- 
+
+![A graph of my homelab network](/readme_assets/network.png)
+
+
 # Backend
 ---
 ![Proxmox](https://a11ybadges.com/badge?logo=proxmox)
@@ -66,6 +69,8 @@ My homelab consists of a two-system proxmox cluster. My nodes are Elips and Mine
 
 
 ## NGINX
+
+## OpenVPN
 
 ## Kubernates
 
