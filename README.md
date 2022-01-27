@@ -30,10 +30,11 @@ My homelab consists of a two-system proxmox cluster. My nodes are Elips and Mine
 ![Uptime](https://img.shields.io/uptimerobot/ratio/m790466602-0858f891fbe572951f707f6d?label=Uptime%20-%20Month)
 * SuperMicro 
 * RAM - 256Gb DDR3 Registered ECC Memory
-* CPU - 4 x 
-* Networking - 4 x 1Gbe
+* CPU - 4 x AMD Opteron 6180 SE, 12 cores @2.5GHz
+* Networking - 2 x 1Gbe
 * Storage
-  - 10TiB - RAIDZ1
+  - 2TiB - ZFS Mirror (Boot drive)
+  - 6TiB - RAIDZ1
 
 ![A graph of my homelab network](/readme_assets/network.png)
 
