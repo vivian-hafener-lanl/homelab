@@ -22,6 +22,7 @@ My homelab consists of a two-system proxmox cluster. My nodes are Elips and Mine
 * Networking - 6 x 1Gbe
 * Storage
   - 128GiB SSD (Boot drive)
+  - 2 TiB - ZFS Mirror
   - 3 TiB - ZFS Mirror
   - 4 TiB - ZFS Mirror
 #### Minerva
@@ -34,7 +35,8 @@ My homelab consists of a two-system proxmox cluster. My nodes are Elips and Mine
 * Networking - 2 x 1Gbe
 * Storage
   - 2TiB - ZFS Mirror (Boot drive)
-  - 6TiB - RAIDZ1
+  - 2TiB - ZFS Mirror
+  - 8TiB - ZFS Mirror
 
 ![A graph of my homelab network](/readme_assets/network.png)
 
