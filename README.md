@@ -1,7 +1,7 @@
 # Vivi's Homelab
 
 <!-- ANCHOR: introduction -->
-###### Status
+###### Status: Work in Progress
 ![last commit](https://img.shields.io/github/last-commit/viv-codes/homelab)
 ![license](https://img.shields.io/github/license/viv-codes/homelab)
 
@@ -16,24 +16,31 @@ My homelab consists of a two-system proxmox cluster. My nodes are Elips and Mine
 ![Online](https://img.shields.io/uptimerobot/status/m790187873-2619a6e8222a7cd184383f39)
 ![Uptime](https://img.shields.io/uptimerobot/ratio/7/m790187873-2619a6e8222a7cd184383f39?label=Uptime%20-%20week)
 ![Uptime](https://img.shields.io/uptimerobot/ratio/m790187873-2619a6e8222a7cd184383f39?label=Uptime%20-%20Month)
-* Thinkserver TD340
+* Lenovo Thinkserver TD340
 * RAM - 64Gb DDR3 Registered ECC Memory
 * CPU - 1 x Intel Xeon E5-2420 v2, 12 cores @ 2.20GHz
 * Networking - 6 x 1Gbe
 * Storage
   - 128GiB SSD (Boot drive)
+  - 2 TiB - ZFS Mirror
   - 3 TiB - ZFS Mirror
   - 4 TiB - ZFS Mirror
 #### Minerva
 ![Online](https://img.shields.io/uptimerobot/status/m790466602-0858f891fbe572951f707f6d)
 ![Uptime](https://img.shields.io/uptimerobot/ratio/7/m790466602-0858f891fbe572951f707f6d?label=Uptime%20-%20Week)
 ![Uptime](https://img.shields.io/uptimerobot/ratio/m790466602-0858f891fbe572951f707f6d?label=Uptime%20-%20Month)
-* RAM
-* CPU
-* Networking - 4 x 1Gbe
+* SuperMicro 
+* RAM - 256Gb DDR3 Registered ECC Memory
+* CPU - 4 x AMD Opteron 6180 SE, 12 cores @2.5GHz
+* Networking - 2 x 1Gbe
 * Storage
-  - 10TiB - RAIDZ1
- 
+  - 2TiB - ZFS Mirror (Boot drive)
+  - 2TiB - ZFS Mirror
+  - 8TiB - ZFS Mirror
+
+![A graph of my homelab network](/readme_assets/network.png)
+
+
 # Backend
 ---
 ![Proxmox](https://a11ybadges.com/badge?logo=proxmox)
@@ -66,6 +73,8 @@ My homelab consists of a two-system proxmox cluster. My nodes are Elips and Mine
 
 
 ## NGINX
+
+## OpenVPN
 
 ## Kubernates
 
