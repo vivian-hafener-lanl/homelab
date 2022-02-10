@@ -8,7 +8,7 @@
 
 # Introduction
 ---
-This repo hosts all of the files and documentation from the creation and operation of my homelab. A homelab is a system or collection of systems used for learning about hardware, networking, and software, with the secondary goal of hosting services. This is the case for my homelab, and as a result of this project I hope to deepen my knowledge of DevOps techniques and tools, specifically GitOps, Kubernates, Nginx, Proxmox, and Pfsense.
+This repo hosts all of the files and documentation from the creation and operation of my homelab. A homelab is a system or collection of systems used for learning about hardware, networking, and software, with the secondary goal of hosting services. This is the case for my homelab, and as a result of this project I hope to deepen my knowledge of DevOps techniques and tools, specifically Proxmox, Nginx, and Pfsense.
 
 ## Overview
 My homelab consists of a two-system proxmox cluster. My nodes are Elips and Minerva. Elips is less powerful, but has more space for storage expansion in the future. For this reason Elips primarily hosts my nextcloud instance. Minerva is my more powerful node, and is used to host the majority of my services via Kubernates. Minerva also contains my private network, which I use for higher security storage and operations. 
@@ -44,7 +44,6 @@ My homelab consists of a two-system proxmox cluster. My nodes are Elips and Mine
 # Backend
 ---
 ![Proxmox](https://a11ybadges.com/badge?logo=proxmox)
-![Kubernetes](https://a11ybadges.com/badge?logo=kubernetes)
 ![Docker](https://a11ybadges.com/badge?logo=docker)
 ![NGINX](https://a11ybadges.com/badge?logo=nginx)
 ![pfSense](https://a11ybadges.com/badge?logo=pfsense)
@@ -76,10 +75,6 @@ My homelab consists of a two-system proxmox cluster. My nodes are Elips and Mine
 
 ## OpenVPN
 
-## Kubernates
-
-## Flux
-
 # Services
 ---
 ![WordPress](https://a11ybadges.com/badge?logo=wordpress)
@@ -94,4 +89,3 @@ My homelab consists of a two-system proxmox cluster. My nodes are Elips and Mine
 ## Documentation referenced:
 * Proxmox Installation - https://pve.proxmox.com/wiki/Installation
 * pfSense Installation - https://docs.netgate.com/pfsense/en/latest/install/download-installer-image.html
-* K8s on Proxmox - https://github.com/galenguyer/k8s 
