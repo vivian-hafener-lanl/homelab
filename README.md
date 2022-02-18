@@ -95,9 +95,12 @@ This is the proxy-hosts page, where you can see all of my container hosts.
 
 #### Heimdall - https://dash.vhafener.com
 Heimdall is the dashboard I use, which makes it easier and faster to access all of my services. I set this to the default homepage of firefox on all of my machines for easy access. 
-
 ![A screenshot of heimdall](/readme_assets/heimdall.png)
 
+#### Nextcloud - https://drive.vhafener.com
+This is by far my most used service. This is the primary place where all of my school, personal, and archival documents are hosted. I have a total of 1.6TB currently stored in my Nextcloud account. I use the Nextcloud desktop client to sync my frequently used documents across all of my devices, so that I have local access, while keeping nextcloud up-to-date on my changes. I also configured my Nextcloud instance with a built in Collabora Online Development Environment (CODE) server, which enables real-time sharing and collaboration of documents on my Nextcloud, with very similar performance to google docs. 
+
+#### Gitlab - https://git.vhafener.com
 
 
 ## Documentation referenced:
