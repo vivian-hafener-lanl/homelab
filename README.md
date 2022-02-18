@@ -102,6 +102,14 @@ This is by far my most used service. This is the primary place where all of my s
 
 #### Gitlab - https://git.vhafener.com
 
+#### Overleaf - http://overleaf.vhafener.com
+
+#### Atheos - http://ide.vhafener.com
+
+#### Jellyfin - http://watch.vhafener.com
+
+#### Kavita - http://read.vhafener.com
+
 
 ## Documentation referenced:
 * Proxmox Installation - https://pve.proxmox.com/wiki/Installation
