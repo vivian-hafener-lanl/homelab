@@ -79,7 +79,12 @@ Nginx Proxy Manager has a clean, uncomplicated interface that makes management s
 This is the proxy-hosts page, where you can see all of my container hosts.
 ![A screenshot of nginx proxy manager's webpage](/readme_assets/npm1.png)
 
-
+## Future plans
+- [ ] Implement Kubernetes and Flux for CD/CI for my services
+- [ ] Configure a secondary backup server on Eplis
+- [ ] Set up an offsite backup server
+- [ ] Implement (force) HTTPS on all services that don't already have it
+- [ ] Virtualize a workstation for me to access remotely (once I get a low-profile GPU)
 
 <!-- ## OpenVPN
  -->
@@ -119,6 +124,11 @@ I don't use this often, but host it as a redundant system in case my laptop fail
 #### Kavita - http://read.vhafener.com
 Kavita is a redundant system in case I'm bored and want something to read, but don't have my kindle or any or my other devices that have access to nextcloud. It's 
 ![A screenshot of kavita](/readme_assets/read.png)
+
+## Future plans for my services:
+- [ ] Optimize Nextcloud with better caching methods
+- [ ] Add more services
+- [ ] Implement some kind of SSO
 
 
 ## Documentation referenced:
