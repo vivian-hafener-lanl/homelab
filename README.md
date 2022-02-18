@@ -99,12 +99,20 @@ Heimdall is the dashboard I use, which makes it easier and faster to access all 
 
 #### Nextcloud - https://drive.vhafener.com
 This is by far my most used service. This is the primary place where all of my school, personal, and archival documents are hosted. I have a total of 1.6TB currently stored in my Nextcloud account. I use the Nextcloud desktop client to sync my frequently used documents across all of my devices, so that I have local access, while keeping nextcloud up-to-date on my changes. I also configured my Nextcloud instance with a built in Collabora Online Development Environment (CODE) server, which enables real-time sharing and collaboration of documents on my Nextcloud, with very similar performance to google docs. 
+![A screenshot of Nextcloud](/readme_assets/nextcloud.png)
 
 #### Gitlab - https://git.vhafener.com
+I use this GitLab instance to hold internal documentation and some repos that I don't want on GitHub, even in private repos. Eventually I plan on integrating this with k8s to handle CD/CI operations. 
+![A screenshot of gitlab](/readme_assets/gitlab.png)
 
 #### Overleaf - http://overleaf.vhafener.com
+I use overleaf to edit and store my resumes, as well as to typeset important papers or documents
+![A screenshot of overleaf](/readme_assets/overleaf.png)
 
 #### Atheos - http://ide.vhafener.com
+I don't use this often, but host it as a redundant system in case my laptop fails. This way I always have access to an ide that I can go back to later, in case I have classwork or something. I came within minutes of needing it on Wednesday, February 16th. 
+![A screenshot of atheos](/readme_assets/ide.png)
+
 
 #### Jellyfin - http://watch.vhafener.com
 
