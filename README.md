@@ -21,9 +21,9 @@ My homelab consists of a two servers, with separate proxmox installations on eac
 * CPU - 12 x Intel Xeon E5-2420 v2, 2 sockets, 1 CPU w/ 12 cores @ 2.20GHz
 * Networking - 6 x 1Gbe
 * Storage
-  - 128GiB SSD (Boot drive)
-  - 3 TiB - ZFS Mirror
-  - 4 TiB - ZFS Mirror
+  - 128GiB WD SATA SSD - (Boot drive)
+  - 3 TiB Hitachi SATA - ZFS Mirror
+  - 4 TiB WD Red/Blue  - ZFS Mirror
 #### Minerva
 ![Online](https://img.shields.io/uptimerobot/status/m790466602-0858f891fbe572951f707f6d)
 ![Uptime](https://img.shields.io/uptimerobot/ratio/7/m790466602-0858f891fbe572951f707f6d?label=Uptime%20-%20Week)
@@ -33,9 +33,9 @@ My homelab consists of a two servers, with separate proxmox installations on eac
 * CPU - 48 x AMD Opteron 6180 SE, 4 sockets, 12 cores @2.5GHz
 * Networking - 2 x 1Gbe
 * Storage
-  - 2TiB - ZFS Mirror (Boot drive and VM Backups)
-  - 2TiB - ZFS Mirror (VM Storage)
-  - 8TiB - ZFS Mirror (Bulk storage)
+  - 2TiB Hitachi - ZFS Mirror (Boot drive and VM Backups)
+  - 2TiB Hitachi - ZFS Mirror (VM Storage)
+  - 8TiB WD Gold - ZFS Mirror (Bulk storage)
 
 ![A graph of my homelab network](/readme_assets/network.png)
 
