@@ -22,7 +22,6 @@ My homelab consists of a two servers, with separate proxmox installations on eac
 * Networking - 6 x 1Gbe
 * Storage
   - 128GiB SSD (Boot drive)
-  - 2 TiB - ZFS Mirror
   - 3 TiB - ZFS Mirror
   - 4 TiB - ZFS Mirror
 #### Minerva
@@ -34,9 +33,9 @@ My homelab consists of a two servers, with separate proxmox installations on eac
 * CPU - 4 x AMD Opteron 6180 SE, 12 cores @2.5GHz
 * Networking - 2 x 1Gbe
 * Storage
-  - 2TiB - ZFS Mirror (Boot drive)
-  - 2TiB - ZFS Mirror
-  - 8TiB - ZFS Mirror
+  - 2TiB - ZFS Mirror (Boot drive and VM Backups)
+  - 2TiB - ZFS Mirror (VM Storage)
+  - 8TiB - ZFS Mirror (Bulk storage)
 
 ![A graph of my homelab network](/readme_assets/network.png)
 
@@ -47,8 +46,8 @@ My homelab consists of a two servers, with separate proxmox installations on eac
 ![Docker](https://a11ybadges.com/badge?logo=docker)
 ![NGINX](https://a11ybadges.com/badge?logo=nginx)
 ![pfSense](https://a11ybadges.com/badge?logo=pfsense)
-![OpenVPN](https://a11ybadges.com/badge?logo=openvpn)
-
+<!-- ![OpenVPN](https://a11ybadges.com/badge?logo=openvpn)
+ -->
 ## Proxmox
 1. Install Proxmox from [the ISO](https://www.proxmox.com/en/downloads/category/iso-images-pve) by following the [official documentation ](https://pve.proxmox.com/wiki/Installation)
 2. Configure Networking in System>Network
@@ -72,6 +71,7 @@ My homelab consists of a two servers, with separate proxmox installations on eac
 
 
 ## NGINX
+Routing within my systems is handled by Nginx Proxy Manager. 
 
 ## OpenVPN
 
