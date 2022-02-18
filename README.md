@@ -18,7 +18,7 @@ My homelab consists of a two servers, with separate proxmox installations on eac
 ![Uptime](https://img.shields.io/uptimerobot/ratio/m790187873-2619a6e8222a7cd184383f39?label=Uptime%20-%20Month)
 * Lenovo Thinkserver TD340
 * RAM - 64Gb DDR3 Registered ECC Memory
-* CPU - 1 x Intel Xeon E5-2420 v2, 12 cores @ 2.20GHz
+* CPU - 12 x Intel Xeon E5-2420 v2, 2 sockets, 1 CPU w/ 12 cores @ 2.20GHz
 * Networking - 6 x 1Gbe
 * Storage
   - 128GiB SSD (Boot drive)
