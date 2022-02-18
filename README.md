@@ -30,7 +30,7 @@ My homelab consists of a two servers, with separate proxmox installations on eac
 ![Uptime](https://img.shields.io/uptimerobot/ratio/m790466602-0858f891fbe572951f707f6d?label=Uptime%20-%20Month)
 * SuperMicro 
 * RAM - 256Gb DDR3 Registered ECC Memory
-* CPU - 4 x AMD Opteron 6180 SE, 12 cores @2.5GHz
+* CPU - 48 x AMD Opteron 6180 SE, 4 sockets, 12 cores @2.5GHz
 * Networking - 2 x 1Gbe
 * Storage
   - 2TiB - ZFS Mirror (Boot drive and VM Backups)
@@ -71,13 +71,13 @@ My homelab consists of a two servers, with separate proxmox installations on eac
 
 
 ## NGINX
-Routing within my systems is handled by Nginx Proxy Manager. 
+Routing within my systems is handled by Nginx Proxy Manager. This is a frontend for NGINX that allows for easy remote configuration of proxy hosts, redirection hosts, streams, and 404 hosts. I primarily use NGINX Proxy Manager for it's proxy host functionality, as it routes incoming requests based on my CNAME DNS records to my various service containers. Nginx Proxy Manager also assists with the generation of SSL certificates for some services, and can secure sites behind group-based authentication.
 
-## OpenVPN
-
+<!-- ## OpenVPN
+ -->
 # Services
 ---
-![WordPress](https://a11ybadges.com/badge?logo=wordpress)
+<!-- ![WordPress](https://a11ybadges.com/badge?logo=wordpress) -->
 ![GitLab](https://a11ybadges.com/badge?logo=gitlab)
 ![Nextcloud](https://a11ybadges.com/badge?logo=nextcloud)
 ![Overleaf](https://a11ybadges.com/badge?logo=overleaf)
