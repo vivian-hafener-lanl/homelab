@@ -117,6 +117,7 @@ I don't use this often, but host it as a redundant system in case my laptop fail
 #### Jellyfin - http://watch.vhafener.com
 
 #### Kavita - http://read.vhafener.com
+Kavita is a redundant system in case I'm bored and want something to read, but don't have my kindle or any or my other devices that have access to nextcloud. It's 
 
 
 ## Documentation referenced:
