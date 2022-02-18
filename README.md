@@ -28,7 +28,7 @@ My homelab consists of a two servers, with separate proxmox installations on eac
 ![Online](https://img.shields.io/uptimerobot/status/m790466602-0858f891fbe572951f707f6d)
 ![Uptime](https://img.shields.io/uptimerobot/ratio/7/m790466602-0858f891fbe572951f707f6d?label=Uptime%20-%20Week)
 ![Uptime](https://img.shields.io/uptimerobot/ratio/m790466602-0858f891fbe572951f707f6d?label=Uptime%20-%20Month)
-* SuperMicro 
+* SuperMicro XXXX chassis with H8QG6 Motherboard
 * RAM - 256Gb DDR3 Registered ECC Memory
 * CPU - 48 x AMD Opteron 6180 SE, 4 sockets, 12 cores @2.5GHz
 * Networking - 2 x 1Gbe
@@ -58,6 +58,7 @@ My homelab consists of a two servers, with separate proxmox installations on eac
    - Set up your storage in the way you see fit. Due to the drives available to me, I chose ZFS RAID mirrors on Elips and ZFS RAID1 striped RAID on Minerva
 4. Add certificates in System > Certificates - generate an SSL certificate using something like certbot. Since I already have a wildcard cert for my domain, I just imported it using the proxmox web interface.
 5. Disable the Enterprise repo and enable the no-subscription repo in the Updates > Repository tab. This will mean you get updates but won't have to pay.
+![A screenshot of minerva's proxmox management page](/readme_assets/minerva.png)
 
 ## Pfsense
 1. Installation
@@ -73,6 +74,13 @@ My homelab consists of a two servers, with separate proxmox installations on eac
 ## NGINX
 Routing within my systems is handled by Nginx Proxy Manager. This is a frontend for NGINX that allows for easy remote configuration of proxy hosts, redirection hosts, streams, and 404 hosts. I primarily use NGINX Proxy Manager for it's proxy host functionality, as it routes incoming requests based on my CNAME DNS records to my various service containers. Nginx Proxy Manager also assists with the generation of SSL certificates for some services, and can secure sites behind group-based authentication.
 
+Nginx Proxy Manager has a clean, uncomplicated interface that makes management super easy
+![A screenshot of nginx proxy manager's webpage](/readme_assets/npm.png)
+This is the proxy-hosts page, where you can see all of my container hosts.
+![A screenshot of nginx proxy manager's webpage](/readme_assets/npm1.png)
+
+
+
 <!-- ## OpenVPN
  -->
 # Services
@@ -84,6 +92,23 @@ Routing within my systems is handled by Nginx Proxy Manager. This is a frontend 
 ![Jellyfin](https://a11ybadges.com/badge?logo=jellyfin)
 
 ## Services
+
+#### Heimdall - https://dash.vhafener.com
+Heimdall is the dashboard I use, which makes it easier and faster to access all of my services. I set this to the default homepage of firefox on all of my machines for easy access. 
+![A screenshot of heimdall](/readme_assets/heimdall.png)
+
+#### Nextcloud - https://drive.vhafener.com
+This is by far my most used service. This is the primary place where all of my school, personal, and archival documents are hosted. I have a total of 1.6TB currently stored in my Nextcloud account. I use the Nextcloud desktop client to sync my frequently used documents across all of my devices, so that I have local access, while keeping nextcloud up-to-date on my changes. I also configured my Nextcloud instance with a built in Collabora Online Development Environment (CODE) server, which enables real-time sharing and collaboration of documents on my Nextcloud, with very similar performance to google docs. 
+
+#### Gitlab - https://git.vhafener.com
+
+#### Overleaf - http://overleaf.vhafener.com
+
+#### Atheos - http://ide.vhafener.com
+
+#### Jellyfin - http://watch.vhafener.com
+
+#### Kavita - http://read.vhafener.com
 
 
 ## Documentation referenced:
