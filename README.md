@@ -97,6 +97,7 @@ This is the proxy-hosts page, where you can see all of my container hosts.
 ![Jellyfin](https://a11ybadges.com/badge?logo=jellyfin)
 
 ## Services
+All of my services, with the exception of Nextcloud, are run from within docker containers within their Proxmox containers. I realize that this isn't ideal, but it greatly simplifies my networking, and makes everything a lot simpler. Additionally, due to the way that Proxmox containers work, this introduces very little overhead versus running them all in one big proxmox container. In the future I plan on implementing Ansible to automate actions across these containers. 
 
 #### Heimdall - https://dash.vhafener.com
 Heimdall is the dashboard I use, which makes it easier and faster to access all of my services. I set this to the default homepage of firefox on all of my machines for easy access. 
