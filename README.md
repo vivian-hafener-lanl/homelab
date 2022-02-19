@@ -121,6 +121,8 @@ I don't use this often, but host it as a redundant system in case my laptop fail
 
 
 #### Jellyfin - http://watch.vhafener.com
+This is a media server that hosts music, movies, and tv shows. To be frank, I don't have much time to watch media, but sometimes my girlfriend and I like to watch the mandalorian or some of the other shows that I have hosted here. 
+![A screenshot of the jellyfin interface](/readme_assets/watch.png)
 
 #### Kavita - http://read.vhafener.com
 Kavita is a redundant system in case I'm bored and want something to read, but don't have my kindle or any or my other devices that have access to nextcloud. It's 
