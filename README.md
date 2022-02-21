@@ -28,7 +28,7 @@ My homelab consists of a two servers, with separate proxmox installations on eac
 ![Online](https://img.shields.io/uptimerobot/status/m790466602-0858f891fbe572951f707f6d)
 ![Uptime](https://img.shields.io/uptimerobot/ratio/7/m790466602-0858f891fbe572951f707f6d?label=Uptime%20-%20Week)
 ![Uptime](https://img.shields.io/uptimerobot/ratio/m790466602-0858f891fbe572951f707f6d?label=Uptime%20-%20Month)
-* SuperMicro XXXX chassis with H8QG6 Motherboard
+* SuperMicro chassis with H8QG6 Motherboard
 * RAM - 256Gb DDR3 Registered ECC Memory
 * CPU - 48 x AMD Opteron 6180 SE, 4 sockets, 12 cores @2.5GHz
 * Networking - 2 x 1Gbe
