@@ -8,7 +8,7 @@
 
 # Introduction
 ---
-This repo hosts all of the files and documentation from the creation and operation of my homelab. A homelab is a system or collection of systems used for learning about hardware, networking, and software, with the secondary goal of hosting services for personal or family use. This is the case for my homelab, and as a result of this project I hope to deepen my knowledge of DevOps techniques and tools, specifically Proxmox, Nginx, and Pfsense.
+This project started as my first major project with CSH, and has been a work in progress ever since. Due to some pretty significant changes since it's first iteration, documentation for my homelab as of it's first iteration can be found in this repo in the 'old' branch. 
 
 ## Overview
 My homelab consists of a two servers, with separate proxmox installations on each. My systems are named Elips and Minerva. Elips is less powerful, but has more space for storage expansion in the future, which is why it will be used for secondary backups in the future. Eplis is used as my dev server, where I try and learn about new configurations before deploying them to Minerva for prod. Minerva is my more powerful node, and is used to host the majority of my services via PCT containers (and eventually kubernetes). Minerva also will contain a private network accessible via openvpn, which I intend to use for higher security applications and more sensetive storage.  
