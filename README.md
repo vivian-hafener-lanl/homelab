@@ -71,7 +71,7 @@ This is the proxy-hosts page, where you can see all of my container hosts.
 ![A screenshot of nginx proxy manager's webpage](/readme_assets/npm1.png)
 
 ## OpenVPN Connection
-Being able to connect to my server's internal network via a VPN serves two main purposes. First, it makes management of systems like pfsense much easier. Instead of booting a VM inside my network and using VNC through proxmox (SLOW!) to interact with pfsense, with OpenVPN I can just remotely access the management portal as if I were on the same network. Additionally, connecting via OpenVPN enables the management of my k3s cluster from my laptop, which is super convenient and amazing and will be discussed more in the next section of this document. I set up my OpenVPN server using the built-in utility for pfsense, using the instructions [here](https://www.comparitech.com/blog/vpn-privacy/openvpn-server-pfsense/). 
+Being able to connect to my server's internal network via a VPN serves two main purposes. First, it makes management of systems like pfsense much easier. Instead of booting a VM inside my network and using VNC through proxmox (SLOW!) to interact with pfsense, with OpenVPN I can just remotely access the management portal as if I were on the same network. Additionally, connecting via OpenVPN enables the management of my k3s cluster from my laptop, which is super convenient and amazing and will be discussed more in the next section of this document. I set up my OpenVPN server using the built-in utility for pfsense, using the instructions [here](https://www.comparitech.com/blog/vpn-privacy/openvpn-server-pfsense/). It was quite a simple setup process, and makes my life so much easier. 
 
 ## Future plans
 - [ ] Implement Kubernetes and Flux for CD/CI for my services
