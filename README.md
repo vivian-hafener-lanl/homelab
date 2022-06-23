@@ -1,4 +1,4 @@
-# Vivi's Homelab
+# Vivi's Homelab v2
 
 <!-- ANCHOR: introduction -->
 ###### Status: Work in Progress
@@ -8,23 +8,12 @@
 
 # Introduction
 ---
-This project started as my first major project with CSH, and has been a work in progress ever since. Due to some pretty significant changes since it's first iteration, documentation for my homelab as of it's first iteration can be found in this repo in the 'old' branch. 
+This project started as my first major project with CSH, and has been a work in progress ever since. Due to some pretty significant changes since it's first iteration, documentation for my homelab as of it's first iteration can be found in this repo in the 'old' branch. This main branch documents the newest features and systems running on my homelab. 
 
 ## Overview
-My homelab consists of a two servers, with separate proxmox installations on each. My systems are named Elips and Minerva. Elips is less powerful, but has more space for storage expansion in the future, which is why it will be used for secondary backups in the future. Eplis is used as my dev server, where I try and learn about new configurations before deploying them to Minerva for prod. Minerva is my more powerful node, and is used to host the majority of my services via PCT containers (and eventually kubernetes). Minerva also will contain a private network accessible via openvpn, which I intend to use for higher security applications and more sensetive storage.  
-#### Elips
-![Online](https://img.shields.io/uptimerobot/status/m790187873-2619a6e8222a7cd184383f39)
-![Uptime](https://img.shields.io/uptimerobot/ratio/7/m790187873-2619a6e8222a7cd184383f39?label=Uptime%20-%20week)
-![Uptime](https://img.shields.io/uptimerobot/ratio/m790187873-2619a6e8222a7cd184383f39?label=Uptime%20-%20Month)
-* Lenovo Thinkserver TD340
-* RAM - 64Gb DDR3 Registered ECC Memory
-* CPU - 12 x Intel Xeon E5-2420 v2, 2 sockets, 1 CPU w/ 12 cores @ 2.20GHz
-* Networking - 6 x 1Gbe
-* Storage
-  - 128GiB WD SATA SSD - (Boot drive)
-  - 3 TiB Hitachi SATA - ZFS Mirror
-  - 4 TiB WD Red/Blue  - ZFS Mirror
-#### Minerva
+Since the initial deployment of my homelab, I moved from two servers to one. This change was largely due to the fact that Minerva alone is more than enough to run my entire homelab on, with plenty of resources to spare. Because of this, as well as the issues with relocating and finding a place for a non-rack-mounted server, I sold Eplis, and now my entire homelab resides on Minerva. 
+
+#### Minerva - Hardware
 ![Online](https://img.shields.io/uptimerobot/status/m790466602-0858f891fbe572951f707f6d)
 ![Uptime](https://img.shields.io/uptimerobot/ratio/7/m790466602-0858f891fbe572951f707f6d?label=Uptime%20-%20Week)
 ![Uptime](https://img.shields.io/uptimerobot/ratio/m790466602-0858f891fbe572951f707f6d?label=Uptime%20-%20Month)
@@ -33,9 +22,9 @@ My homelab consists of a two servers, with separate proxmox installations on eac
 * CPU - 48 x AMD Opteron 6180 SE, 4 sockets, 12 cores @2.5GHz
 * Networking - 2 x 1Gbe
 * Storage
-  - 2TiB Hitachi - ZFS Mirror (Boot drive and VM Backups)
-  - 2TiB Hitachi - ZFS Mirror (VM Storage)
-  - 8TiB WD Gold - ZFS Mirror (Bulk storage)
+  - 2 x 2TiB Hitachi - ZFS Mirror (Boot drive and VM Backups)
+  - 2 x 2TiB Hitachi - ZFS Mirror (VM Storage)
+  - 2 x 8TiB WD Gold - ZFS Mirror (Bulk storage)
 
 ![A graph of my homelab network](/readme_assets/network.png)
 
@@ -46,8 +35,10 @@ My homelab consists of a two servers, with separate proxmox installations on eac
 ![Docker](https://a11ybadges.com/badge?logo=docker)
 ![NGINX](https://a11ybadges.com/badge?logo=nginx)
 ![pfSense](https://a11ybadges.com/badge?logo=pfsense)
-<!-- ![OpenVPN](https://a11ybadges.com/badge?logo=openvpn)
- -->
+![OpenVPN](https://a11ybadges.com/badge?logo=openvpn)
+
+Many of the basic components of my homelab have remained the same since my first iteration. My basic structure of Proxmox, Pfsense, and Nginx have not changed much since the first iteration of my homelab. Anything in the backend section after Nginx has been added since my first iteration. 
+
 ## Proxmox
 1. Install Proxmox from [the ISO](https://www.proxmox.com/en/downloads/category/iso-images-pve) by following the [official documentation ](https://pve.proxmox.com/wiki/Installation)
 2. Configure Networking in System>Network
