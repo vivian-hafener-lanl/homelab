@@ -73,32 +73,33 @@ This is the proxy-hosts page, where you can see all of my container hosts.
 ## OpenVPN Connection
 Being able to connect to my server's internal network via a VPN serves two main purposes. First, it makes management of systems like pfsense much easier. Instead of booting a VM inside my network and using VNC through proxmox (SLOW!) to interact with pfsense, with OpenVPN I can just remotely access the management portal as if I were on the same network. Additionally, connecting via OpenVPN enables the management of my k3s cluster from my laptop, which is super convenient and amazing and will be discussed more in the next section of this document. I set up my OpenVPN server using the built-in utility for pfsense, using the instructions [here](https://www.comparitech.com/blog/vpn-privacy/openvpn-server-pfsense/). It was quite a simple setup process, and makes my life so much easier. 
 
-## Future plans
-- [ ] Implement Kubernetes and Flux for CD/CI for my services
-- [ ] Configure a secondary backup server on Eplis
-- [ ] Set up an offsite backup server
-- [ ] Implement (force) HTTPS on all services that don't already have it
-- [ ] Virtualize a workstation for me to access remotely (once I get a low-profile GPU)
+## Kubernetes (k3s)
+In June, I decided to give kubernetes another try, as a way of moving my services out of PCT containers and onto a more compact, scalable platform with lower overhead. I also wanted to learn about kubernetes, and eventually set up some kind of CI/CD, which I got to later (citation needed). Setting up k3s was trivially easy, especially compared to my previous attempts at various types of k8s. I followed [this guide](https://loganmarchione.com/2022/03/k3s-single-node-cluster-for-noobs/) until the cluster was all configured, and was accessible by running `kubectl get nodes`. After that, I worked on moving the majority of my microservices over to k3s, from PCT containers. Initially, I moved heimdall and my personal site over, and started running grafana and archivebox due to the easy configuration on kube. In configuring my system, I set it up so that all cluster configuration would be done from my laptop, while connected to my server's internal LAN, which has greatly simplified the management process. It also makes it much easier to interact with my configuration files, because they are already located locally on my laptop, and doesn't require remotely accessing a control node.
 
-<!-- ## OpenVPN
- -->
+## CI/CD (coming soon)
+CI/CD
+
+## Backups (lol. lmao.)
+
+
 # Services
 ---
 <!-- ![WordPress](https://a11ybadges.com/badge?logo=wordpress) -->
 ![GitLab](https://a11ybadges.com/badge?logo=gitlab)
 ![Nextcloud](https://a11ybadges.com/badge?logo=nextcloud)
 ![Overleaf](https://a11ybadges.com/badge?logo=overleaf)
-![Jellyfin](https://a11ybadges.com/badge?logo=jellyfin)
+
+Since the first iteration of my homelab, I noted the services that I tended to use and those that I neglected. I used this information when deciding which services to keep and which to discard in my move to k3s.
 
 ## Services
-All of my services, with the exception of Nextcloud, are run from within docker containers within their Proxmox containers. I realize that this isn't ideal, but it greatly simplifies my networking, and makes everything a lot simpler. Additionally, due to the way that Proxmox containers work, this introduces very little overhead versus running them all in one big proxmox container. In the future I plan on implementing Ansible to automate actions across these containers. 
+Besides Nextcloud (which is special), all of my services run in k3s.
 
 #### Heimdall - https://dash.vhafener.com
 Heimdall is the dashboard I use, which makes it easier and faster to access all of my services. I set this to the default homepage of firefox on all of my machines for easy access. 
 ![A screenshot of heimdall](/readme_assets/heimdall.png)
 
 #### Nextcloud - https://drive.vhafener.com
-This is by far my most used service. This is the primary place where all of my school, personal, and archival documents are hosted. I have a total of 1.6TB currently stored in my Nextcloud account. I use the Nextcloud desktop client to sync my frequently used documents across all of my devices, so that I have local access, while keeping nextcloud up-to-date on my changes. I also configured my Nextcloud instance with a built in Collabora Online Development Environment (CODE) server, which enables real-time sharing and collaboration of documents on my Nextcloud, with very similar performance to google docs. 
+This is by far my most used service. This is the primary place where all of my school, personal, and archival documents are hosted. I have a total of 1.6TB currently stored in my Nextcloud account. I use the Nextcloud desktop client to sync my frequently used documents across all of my devices, so that I have local access, while keeping nextcloud up-to-date on my changes. I also configured my Nextcloud instance with a built in Collabora Online Development Environment (CODE) server, which enables real-time sharing and collaboration of documents on my Nextcloud, with very similar performance to google docs. Finally, I have nextcloud configured on my phone to upload photos as I take them, so that I always have the full resolution versions backed up to nextcloud.
 ![A screenshot of Nextcloud](/readme_assets/nextcloud.png)
 
 #### Gitlab - https://git.vhafener.com
@@ -109,22 +110,8 @@ I use this GitLab instance to hold internal documentation and some repos that I 
 I use overleaf to edit and store my resumes, as well as to typeset important papers or documents
 ![A screenshot of overleaf](/readme_assets/overleaf.png)
 
-#### Atheos - http://ide.vhafener.com
-I don't use this often, but host it as a redundant system in case my laptop fails. This way I always have access to an ide that I can go back to later, in case I have classwork or something. I came within minutes of needing it on Wednesday, February 16th. 
-![A screenshot of atheos](/readme_assets/ide.png)
-
-
-#### Jellyfin - http://watch.vhafener.com
-This is a media server that hosts music, movies, and tv shows. To be frank, I don't have much time to watch media, but sometimes my girlfriend and I like to watch the mandalorian or some of the other shows that I have hosted here. 
-![A screenshot of the jellyfin interface](/readme_assets/watch.png)
-
-#### Kavita - http://read.vhafener.com
-Kavita is a redundant system in case I'm bored and want something to read, but don't have my kindle or any or my other devices that have access to nextcloud. It's 
-![A screenshot of kavita](/readme_assets/read.png)
-
 ## Future plans for my services:
 - [ ] Optimize Nextcloud with better caching methods
-- [ ] Add more services
 - [ ] Implement some kind of SSO
 
 
