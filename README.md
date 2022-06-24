@@ -75,6 +75,7 @@ Being able to connect to my server's internal network via a VPN serves two main 
 
 ## Kubernetes (k3s)
 In June, I decided to give kubernetes another try, as a way of moving my services out of PCT containers and onto a more compact, scalable platform with lower overhead. I also wanted to learn about kubernetes, and eventually set up some kind of CI/CD, which I got to later (citation needed). Setting up k3s was trivially easy, especially compared to my previous attempts at various types of k8s. I followed [this guide](https://loganmarchione.com/2022/03/k3s-single-node-cluster-for-noobs/) until the cluster was all configured, and was accessible by running `kubectl get nodes`. After that, I worked on moving the majority of my microservices over to k3s, from PCT containers. Initially, I moved heimdall and my personal site over, and started running grafana and archivebox due to the easy configuration on kube. In configuring my system, I set it up so that all cluster configuration would be done from my laptop, while connected to my server's internal LAN, which has greatly simplified the management process. It also makes it much easier to interact with my configuration files, because they are already located locally on my laptop, and doesn't require remotely accessing a control node.
+![A screenshot of the k3s dashboard](/readme_assets/k3s.png)
 
 ## CI/CD (coming soon)
 CI/CD
