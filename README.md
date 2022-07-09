@@ -14,6 +14,7 @@ This project started as my first major project with CSH, and has been a work in 
 Since the initial deployment of my homelab, I moved from two servers to one. This change was largely due to the fact that Minerva alone is more than enough to run my entire homelab on, with plenty of resources to spare. Because of this, as well as the issues with relocating and finding a place for a non-rack-mounted server, I sold Eplis, and now my entire homelab resides on Minerva. 
 
 #### Minerva - Hardware
+![image](https://user-images.githubusercontent.com/79525734/178123415-cb808b0e-2d4a-491d-b10d-a7590a43a844.png)
 ![Online](https://img.shields.io/uptimerobot/status/m790466602-0858f891fbe572951f707f6d)
 ![Uptime](https://img.shields.io/uptimerobot/ratio/7/m790466602-0858f891fbe572951f707f6d?label=Uptime%20-%20Week)
 ![Uptime](https://img.shields.io/uptimerobot/ratio/m790466602-0858f891fbe572951f707f6d?label=Uptime%20-%20Month)
